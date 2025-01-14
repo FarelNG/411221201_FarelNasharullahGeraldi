@@ -13,19 +13,18 @@ public class HomeActivity extends AppCompatActivity {
 
 
     private ListView listViewProducts;
-    private Button btnProfile; // Tambahkan tombol profil
+    private Button btnProfile;
 
     Button btnProduct;
     Button btnCart;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home); // Pastikan layout ini ada
+        setContentView(R.layout.activity_home);
 
         listViewProducts = findViewById(R.id.listViewProducts);
-        btnProfile = findViewById(R.id.btnProfile); // Inisialisasi tombol profil
+        btnProfile = findViewById(R.id.btnProfile);
 
-        // Daftar produk sederhana
         String[] products = {
                 "Produk 1 - Rp 100.000",
                 "Produk 2 - Rp 200.000",
@@ -34,15 +33,14 @@ public class HomeActivity extends AppCompatActivity {
                 "Produk 5 - Rp 500.000"
         };
 
-        // Mengatur adapter untuk ListView
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, products);
         listViewProducts.setAdapter(adapter);
 
-        // Aksi tombol profil
+
         btnProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                // Navigasi ke halaman ProfileActivity
+
                 Intent intent = new Intent(HomeActivity.this, ProfileActivity.class);
                 startActivity(intent);
             }

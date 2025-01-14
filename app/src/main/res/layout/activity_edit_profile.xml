@@ -14,7 +14,6 @@
         android:elevation="4dp"
         android:layout_marginBottom="16dp">
 
-        <!-- Input Nama -->
         <EditText
             android:id="@+id/etName"
             android:layout_width="match_parent"
@@ -27,7 +26,6 @@
             android:textColor="#000000"
             android:textSize="16sp" />
 
-        <!-- Input Email -->
         <EditText
             android:id="@+id/etEmail"
             android:layout_width="match_parent"
@@ -40,7 +38,6 @@
             android:textColor="#000000"
             android:textSize="16sp" />
 
-        <!-- Input Nomor Telepon -->
         <EditText
             android:id="@+id/etPhone"
             android:layout_width="match_parent"
@@ -53,7 +50,6 @@
             android:textColor="#000000"
             android:textSize="16sp" />
 
-        <!-- Tombol Simpan -->
         <Button
             android:id="@+id/btnSave"
             android:layout_width="match_parent"

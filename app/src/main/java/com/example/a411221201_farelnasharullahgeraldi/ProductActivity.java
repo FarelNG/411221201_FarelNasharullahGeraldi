@@ -18,7 +18,7 @@ public class ProductActivity extends AppCompatActivity {
 
         listViewProducts = findViewById(R.id.listViewProducts);
 
-        // Daftar produk
+
         String[] products = {
                 "Produk 1 - Rp 100.000",
                 "Produk 2 - Rp 200.000",
@@ -30,7 +30,7 @@ public class ProductActivity extends AppCompatActivity {
                 "Produk 8 - Rp 800.000"
         };
 
-        // Mengatur adapter untuk ListView
+
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, products);
         listViewProducts.setAdapter(adapter);
 
@@ -40,17 +40,17 @@ public class ProductActivity extends AppCompatActivity {
         });
     }
     private void addToCart(String product) {
-        // Simpan produk ke SharedPreferences sebagai contoh
+
         SharedPreferences sharedPreferences = getSharedPreferences("CartPrefs", MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
 
-        // Tambahkan produk ke keranjang
+
         String cartItems = sharedPreferences.getString("cartItems", "");
         cartItems += product + ";";
         editor.putString("cartItems", cartItems);
         editor.apply();
 
-        // Tampilkan pesan
+
         Toast.makeText(this, product + " ditambahkan ke keranjang", Toast.LENGTH_SHORT).show();
     }
 }

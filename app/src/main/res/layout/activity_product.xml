@@ -5,7 +5,6 @@
     android:background="@android:color/white"
     android:padding="16dp">
 
-    <!-- Judul Halaman -->
     <TextView
         android:id="@+id/tvProductTitle"
         android:layout_width="wrap_content"
@@ -17,7 +16,6 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="16dp" />
 
-    <!-- ListView untuk Menampilkan Produk -->
     <ListView
         android:id="@+id/listViewProducts"
         android:layout_width="match_parent"
@@ -28,7 +26,6 @@
         android:background="@android:color/white"
         android:padding="8dp" />
 
-    <!-- Petunjuk -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

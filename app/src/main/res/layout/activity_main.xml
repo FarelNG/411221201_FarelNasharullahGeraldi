@@ -5,18 +5,16 @@
     android:padding="32dp"
     android:background="@android:color/white">
 
-    <!-- Judul Login -->
     <TextView
         android:id="@+id/tvLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="asu"
+        android:text="Login"
         android:textSize="28sp"
         android:textStyle="bold"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="32dp" />
 
-    <!-- Input Username -->
     <EditText
         android:id="@+id/etUsername"
         android:layout_width="match_parent"
@@ -29,7 +27,6 @@
         android:layout_marginBottom="16dp"
         android:padding="12dp"/>
 
-    <!-- Input Password -->
     <EditText
         android:id="@+id/etPassword"
         android:layout_width="match_parent"
@@ -43,7 +40,6 @@
         android:padding="12dp"
         android:inputType="textPassword"/>
 
-    <!-- Tombol Login -->
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"

@@ -15,7 +15,6 @@
         android:elevation="4dp"
         android:layout_marginBottom="16dp">
 
-        <!-- Judul Halaman -->
         <TextView
             android:id="@+id/tvProfileTitle"
             android:layout_width="match_parent"
@@ -27,7 +26,6 @@
             android:layout_marginBottom="20dp"
             android:textColor="@color/black" />
 
-        <!-- Informasi Nama -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -43,7 +41,6 @@
             android:layout_marginBottom="16dp"
             android:textColor="@color/black" />
 
-        <!-- Informasi Email -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -59,7 +56,6 @@
             android:layout_marginBottom="16dp"
             android:textColor="@color/black" />
 
-        <!-- Informasi Nomor Telepon -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -75,7 +71,6 @@
             android:layout_marginBottom="16dp"
             android:textColor="@color/black" />
 
-        <!-- Informasi Alamat -->
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -91,7 +86,6 @@
             android:layout_marginBottom="16dp"
             android:textColor="@color/black" />
 
-        <!-- Tombol Logout -->
         <Button
             android:id="@+id/btnLogout"
             android:layout_width="match_parent"
@@ -103,7 +97,6 @@
             android:layout_marginBottom="12dp"
             android:textStyle="bold" />
 
-        <!-- Tombol Edit Profil -->
         <Button
             android:id="@+id/btnEditProfile"
             android:layout_width="match_parent"

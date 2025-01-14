@@ -26,7 +26,6 @@ public class EditProfileActivity extends AppCompatActivity {
 
         sharedPreferences = getSharedPreferences("UserProfile", MODE_PRIVATE);
 
-        // Muat data profil yang tersimpan
         loadProfile();
 
         btnSave.setOnClickListener(v -> saveProfile());
@@ -59,6 +58,6 @@ public class EditProfileActivity extends AppCompatActivity {
         editor.apply();
 
         Toast.makeText(this, "Profil berhasil disimpan", Toast.LENGTH_SHORT).show();
-        finish(); // Kembali ke halaman sebelumnya
+        finish();
     }
 }

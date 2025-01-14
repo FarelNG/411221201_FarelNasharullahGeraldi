@@ -26,28 +26,23 @@ public class CartActivity extends AppCompatActivity {
 
         listViewCart = findViewById(R.id.listViewCart);
 
-        // Ambil item keranjang dari SharedPreferences
         sharedPreferences = getSharedPreferences("CartPrefs", MODE_PRIVATE);
         String cartItems = sharedPreferences.getString("cartItems", "");
 
-        // Pisahkan item berdasarkan ";"
         cartList = new ArrayList<>();
         if (!cartItems.isEmpty()) {
             cartList = new ArrayList<>(Arrays.asList(cartItems.split(";")));
         }
 
-        // Tampilkan item di ListView
         adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, cartList);
         listViewCart.setAdapter(adapter);
 
-        // Set item click listener untuk menghapus item
         listViewCart.setOnItemClickListener((parent, view, position, id) -> {
             String selectedItem = cartList.get(position);
             confirmRemoveItem(selectedItem, position);
         });
     }
 
-    // Konfirmasi penghapusan item
     private void confirmRemoveItem(String item, int position) {
         new AlertDialog.Builder(this)
                 .setTitle("Hapus Produk")
@@ -57,20 +52,16 @@ public class CartActivity extends AppCompatActivity {
                 .show();
     }
 
-    // Hapus item dari keranjang
     private void removeItem(String item, int position) {
-        // Hapus dari list dan SharedPreferences
         cartList.remove(position);
         saveCartToPreferences();
 
-        // Perbarui adapter
         adapter.notifyDataSetChanged();
 
-        // Tampilkan pesan
         Toast.makeText(this, "\"" + item + "\" berhasil dihapus", Toast.LENGTH_SHORT).show();
     }
 
-    // Simpan keranjang ke SharedPreferences
+
     private void saveCartToPreferences() {
         StringBuilder updatedCart = new StringBuilder();
         for (String product : cartList) {

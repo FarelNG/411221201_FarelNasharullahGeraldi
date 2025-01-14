@@ -28,12 +28,12 @@ public class MainActivity extends AppCompatActivity {
                 String username = etUsername.getText().toString();
                 String password = etPassword.getText().toString();
 
-                // Logika sederhana untuk login
+
                 if (username.equals("admin") && password.equals("admin")) {
                     Toast.makeText(MainActivity.this, "Login Berhasil", Toast.LENGTH_SHORT).show();
                     Intent intent = new Intent(MainActivity.this, com.example.a411221201_farelnasharullahgeraldi.HomeActivity.class);
                     startActivity(intent);
-                    finish(); // Menutup MainActivity
+                    finish();
                 } else {
                     Toast.makeText(MainActivity.this, "Username atau Password Salah", Toast.LENGTH_SHORT).show();
                 }
