@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@android:color/white"
+        android:elevation="4dp"
+        android:layout_marginBottom="16dp">
+
+        <!-- Judul Halaman -->
+        <TextView
+            android:id="@+id/tvProfileTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Profil Pengguna"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/black" />
+
+        <!-- Informasi Nama -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Lengkap"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"
+            android:textColor="#4A4A4A" />
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="John Doe"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/black" />
+
+        <!-- Informasi Email -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"
+            android:textColor="#4A4A4A" />
+        <TextView
+            android:id="@+id/tvEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="johndoe@example.com"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/black" />
+
+        <!-- Informasi Nomor Telepon -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nomor Telepon"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"
+            android:textColor="#4A4A4A" />
+        <TextView
+            android:id="@+id/tvPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+6281234567890"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/black" />
+
+        <!-- Informasi Alamat -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alamat"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"
+            android:textColor="#4A4A4A" />
+        <TextView
+            android:id="@+id/tvAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jalan Mawar No. 123, Jakarta"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/black" />
+
+        <!-- Tombol Logout -->
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:background="@color/design_default_color_primary"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:textStyle="bold" />
+
+        <!-- Tombol Edit Profil -->
+        <Button
+            android:id="@+id/btnEditProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Profil"
+            android:background="@android:color/holo_blue_light"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</ScrollView>
